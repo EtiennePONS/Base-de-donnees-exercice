@@ -142,4 +142,4 @@ group by h.nom
 having count(t.num_preneur) >
 (
 select count( t2.num_preneur)   from trophee t2 join habitant h2 on h2.num_hab = t2.num_preneur where h2.nom = 'Obélix'
-); 
+);
